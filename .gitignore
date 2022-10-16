@@ -1,5 +1,8 @@
 # Data
-data/GDSC/*
+data/*/*
+
+# Percolate src
+Percolate/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
