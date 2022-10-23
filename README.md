@@ -8,9 +8,16 @@ The scripts require anaconda (or mini-conda).
 
 Using <b>create_environment.sh</b> would create the <em>percolate_manuscript</em> environment with all required packages installed.
 
-## Downloading data
+## Reproducing results
+To reproduce the results presented in the manuscript, you can follow these steps.
+
+### First step: Downloading data
 
 Using <b>data_download/scripts/download_GDSC.sh</b> will automatically download and process all the data needed for reproducing the different figures. Downloaded and processed files will appear in the <b>data</b> folder.
+
+## Second step: model selection and training of Percolate models.
+
+Using <b>sh model_training/launch_GDSC_estimation_components_gridsearchAIC.sh</b> would launch the model selection by Grid Search (AIC), train the different GLM-PCA models and align the models by Percolate. Results are saved in <b>output</b>.
 
 ## Citation
 

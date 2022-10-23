@@ -8,4 +8,10 @@ import rpy2.robjects as robjects
 robjects.r('''
     if (!requireNamespace("BiocManager", quietly = TRUE))
         install.packages("BiocManager")
-    BiocManager::install("edgeR", version = "3.8")''')
+    BiocManager::install("edgeR")''')
+
+robjects.r('''
+    if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+    BiocManager::install("DESeq2")''')
+
